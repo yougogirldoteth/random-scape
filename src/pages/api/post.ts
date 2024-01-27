@@ -14,6 +14,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         <meta property='og:image' content=${image_url} />
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="${image_url}" />
+        <meta property="fc:frame:button:1" content="Go" />
+        <meta property="fc:frame:post_url" content="https://frame-test-three.vercel.app/api/frames" />
       </head>
     </html>
   `;
