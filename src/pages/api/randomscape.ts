@@ -6,7 +6,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const randomId = Math.floor(Math.random() * 9999) + 1;
 
   // Append the random number to the post URL query parameter
-  const postUrl = `https://random-scape.vercel.app/api/scapes`;
+  const postUrl = `https://random-scape.vercel.app/api/randomscape`;
   const image_url = `https://cdn.scapes.xyz/scapes/lg/${randomId}.png`;
 
 
