@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+image {
+  width: 100%;
+  height: auto;
+}
