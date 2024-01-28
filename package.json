@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "ncc build api/scaled_scape/[id].ts -o dist",
-  "start": "node dist/api/scaled_scape/[id].js",
+    "start": "node dist/api/scaled_scape/[id].js",
     "lint": "next lint"
   },
   "dependencies": {
