@@ -4,6 +4,11 @@ import { createCanvas, loadImage } from 'canvas';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
     const { id } = req.query;
     const imageUrl = `https://cdn.scapes.xyz/scapes/lg/${id}.png`;
 
