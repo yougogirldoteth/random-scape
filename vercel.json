@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/scaled_scape/[id].ts": {
+      "src/pages/api/scaled_scape/[id].ts": {
         "headers": {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "GET, OPTIONS",
