@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "ncc build api/scaled_scape/[id].ts -o dist",
+  "start": "node dist/api/scaled_scape/[id].js",
     "lint": "next lint"
   },
   "dependencies": {
