@@ -18,6 +18,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         <meta name="viewport" content="width=device-width"/>
         <meta property="og:title" content="Frame" />
         <meta property='og:image' content=${image_url} />
+        <meta property="og:image:width" content="906" />
+        <meta property="og:image:height" content="304" />
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="${image_url}" />
         <meta property="fc:frame:button:1" content="Gib random Scape" />
