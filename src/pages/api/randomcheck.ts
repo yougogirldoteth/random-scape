@@ -15,7 +15,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     <html>
       <head>
         <meta charSet="utf-8"/>
-        <meta name="viewport" content="width=device-width"/>
         <meta property="og:title" content="Frame" />
         <meta property='og:image' content=${image_url} />
         <meta property="fc:frame" content="vNext" />
