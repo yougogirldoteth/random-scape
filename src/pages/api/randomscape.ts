@@ -5,7 +5,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const randomId = Math.floor(Math.random() * 9999) + 1;
     const postUrl = `https://random-scape.vercel.app/api/randomscape`;
-    const scaledImageUrl = `https://random-scape.vercel.app/api/scaled_scape/${randomId}.png`;
+    const scaledImageUrl = `https://random-scape.vercel.app/api/scaled_scape/${randomId}`;
 
     const body = `
       <!DOCTYPE html>
@@ -18,7 +18,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           <meta property="fc:frame" content="vNext" />
           <meta property="fc:frame:image" content="${scaledImageUrl}" />
           <meta property="fc:frame:button:1" content="Gib random Scape" />
-          <meta property="fc:frame:button:2" content="Scape #${randomId}" />
           <meta property="fc:frame:post_url" content="${postUrl}" />
         </head>
       </html>
