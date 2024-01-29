@@ -1,6 +1,6 @@
 // pages/api/scaled_scape/[id].ts
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { createCanvas, loadImage } from 'canvas';
+import { createCanvas, loadImage } from '@napi-rs/canvas'; // Updated import statement
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const { id } = req.query;
     const imageUrl = `https://cdn.scapes.xyz/scapes/lg/${id}.png`;
 
-    // Load the original image
+    // Load the original image using @napi-rs/canvas
     const originalImage = await loadImage(imageUrl);
 
     // Set the desired overall aspect ratio
@@ -25,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // Calculate the required height to achieve the target aspect ratio
     const targetHeight = Math.round(originalImage.width / targetAspectRatio);
 
-    // Create a canvas with the new dimensions
+    // Create a canvas with the new dimensions using @napi-rs/canvas
     const canvas = createCanvas(newWidth, targetHeight);
     const context = canvas.getContext('2d');
 
