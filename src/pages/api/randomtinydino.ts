@@ -17,7 +17,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           <meta property="og:image" content="${scaledImageUrl}" />
           <meta property="fc:frame" content="vNext" />
           <meta property="fc:frame:image" content="${scaledImageUrl}" />
-          <meta property="fc:frame:button:1" content="Gib random Scape" />
+          <meta property="fc:frame:button:1" content="give me a rawr 🤏🦖" />
           <meta property="fc:frame:post_url" content="${postUrl}" />
         </head>
       </html>
