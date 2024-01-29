@@ -36,7 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // Add Scape ID as text with Google Fonts on the left side
     const text = `Tiny Dino #${id}`;
     context.fillStyle = 'white';
-    context.font = 'bold 60px "Roboto Mono", sans-serif'; // Adjust font size and family
+    context.font = 'bold 80px "Roboto Mono", sans-serif'; // Adjust font size and family
     const textMetrics = context.measureText(text);
     const textX = 40; // Adjust the left margin as needed
     const textY = newHeight - 10;
