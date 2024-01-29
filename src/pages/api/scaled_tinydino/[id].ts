@@ -4,10 +4,7 @@ import { createCanvas, loadImage } from '@napi-rs/canvas';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    // Set CORS headers
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    
 
     const { id } = req.query;
     const imageUrl = `https://ipfs.io/ipfs/QmVCLxmzMstWpnCE2caF3AfRNEJmdiA6Z6a8BECnXqd98r/${id}.png`;
