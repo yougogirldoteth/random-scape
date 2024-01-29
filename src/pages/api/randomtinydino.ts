@@ -5,7 +5,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const randomId = Math.floor(Math.random() * 9999) + 1;
     const postUrl = `https://random-scape.vercel.app/api/randomtinydino`;
-    const scaledImageUrl = `https://random-scape.vercel.app/api/scaled_tinydino/${randomId}`;
+    const scaledImageUrl = `https://random-scape.vercel.app/api/scaledtinydino/${randomId}`;
 
     const body = `
       <!DOCTYPE html>
