@@ -1,4 +1,4 @@
-// pages/api/scaled_square/[id].ts
+// pages/api/scaled_tinydino/[id].ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { createCanvas, loadImage } from '@napi-rs/canvas';
 
