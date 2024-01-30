@@ -7,7 +7,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   // Append the random number to the post URL query parameter
   const postUrl = `https://random-scape.vercel.app/api/visualizevalue`;
-  const image_url = `public/images_vv_rare/${randomId}.png`;
+  const image_url = `images_vv_rare/${randomId}.png`;
 
 
   const body = `
@@ -19,7 +19,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         <meta property='og:image' content=${image_url} />
         <meta property="fc:frame" content="vNext" />
         <meta property="fc:frame:image" content="${image_url}" />
-        <meta property="fc:frame:button:1" content="visualizevalue" />
+        <meta property="fc:frame:button:1" content="visualize value" />
         <meta property="fc:frame:post_url" content="${postUrl}" />
       </head>
     </html>
