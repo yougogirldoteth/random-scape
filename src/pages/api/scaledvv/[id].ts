@@ -1,4 +1,4 @@
-// pages/api/scaledtinydino/[id].ts
+// pages/api/scaledvv/[id].ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { createCanvas, loadImage } from '@napi-rs/canvas';
 
@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     
 
     const { id } = req.query;
-    const imageUrl = `public/images_vv_rare/${id}.png`;
+    const imageUrl = `public/vvrare/${id}.png`;
 
     // Load the original square image using @napi-rs/canvas
     const originalImage = await loadImage(imageUrl);
