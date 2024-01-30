@@ -1,16 +1,19 @@
 // pages/api/scaledvv/[id].ts
+import path from 'path';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { createCanvas, loadImage } from '@napi-rs/canvas';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    
+
 
     const { id } = req.query;
-    const imageUrl = `/vvrare/${id}.png`;
+
+    // Construct the absolute path to the image
+    const imagePath = path.join(process.cwd(), 'public', 'vvrare', `${id}.png`);
 
     // Load the original square image using @napi-rs/canvas
-    const originalImage = await loadImage(imageUrl);
+    const originalImage = await loadImage(imagePath);
 
     // Set the desired overall aspect ratio for the square image
     const targetAspectRatio = 1.91 / 1;
