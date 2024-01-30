@@ -7,7 +7,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   // Append the random number to the post URL query parameter
   const postUrl = `https://random-scape.vercel.app/api/visualizevalue`;
-  const image_url = `images_vv_rare/${randomId}.png`;
+  const image_url = `https://random-scape.vercel.app/api/scaledvv/${randomId}`;
 
 
   const body = `
