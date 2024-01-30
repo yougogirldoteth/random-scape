@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     
 
     const { id } = req.query;
-    const imageUrl = `public/vvrare/${id}.png`;
+    const imageUrl = `vvrare/${id}.png`;
 
     // Load the original square image using @napi-rs/canvas
     const originalImage = await loadImage(imageUrl);
